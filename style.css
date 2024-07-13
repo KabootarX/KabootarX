@@ -4,9 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  background: url(./assets/Transport.jpeg);
-  background-size: cover;
-  height: 100%;
+  /* background-size: cover; */
+  /* height: 100%; */
 }
 a {
   text-decoration: none;
@@ -50,20 +49,32 @@ h4 {
   font-size: 32px;
   font-family: Popin, sans-serif;
   text-align: center;
-  top: 40%;
+  /* top: 40%; */
+  z-index: 1000px;
 }
 ul.hero-list {
   list-style: square;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 50%;
+  align-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
   font-size: 20px;
-  margin-left: 3%;
+  margin-left: auto;
   font-family: popin, sans-serif;
   font-weight: bold;
 }
-.track_order {
+#track_o {
   align-items: center;
-  height: 100%;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: auto;
+}
+
+.hero {
+  background: url(./assets/Transport.jpeg);
 }
