@@ -11,7 +11,7 @@
     <div class="container">
       <%-- <header id="header">
         <div class="brandLogo" style="margin-left: 15px">
-          <a href="./index.html">
+          <a href="./index.jsp">
             <img
               src="./assets/Logo.png"
               alt="KabootarX"
@@ -21,7 +21,7 @@
         </div>
         <nav id="navbar">
           <ul id="list">
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.jsp">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="?#track_o">Track</a></li>
             <li>
@@ -33,6 +33,12 @@
           </ul>
         </nav>
       </header> --%>
+       
+       <div id="divzMenu" style="position: absolute; width: 100%; overflow-x: hidden;">
+
+        <jsp:include page="./kbtr-app/kabootar_header.jsp" flush="true">
+        </jsp:include>
+      </div>
       
       <section class="hero" style="height: 585px">
         <div style="display: hidden; height: 200px">
