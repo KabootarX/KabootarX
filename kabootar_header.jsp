@@ -9,7 +9,7 @@
   <body>
     <header id="header">
         <div class="brandLogo" style="margin-left: 15px">
-          <a href="./index.html">
+          <a href="./index.jsp">
             <img
               src="./assets/Logo.png"
               alt="KabootarX"
@@ -19,7 +19,7 @@
         </div>
         <nav id="navbar">
           <ul id="list">
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.jsp">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="?#track_o">Track</a></li>
             <li>
