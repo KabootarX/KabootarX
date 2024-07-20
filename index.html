@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- header start -->
     <div class="container">
-      <%-- <header id="header">
+      <header id="header">
         <div class="brandLogo" style="margin-left: 15px">
-          <a href="./index.jsp">
+          <a href="./index.html">
             <img
               src="./assets/Logo.png"
               alt="KabootarX"
@@ -21,7 +22,7 @@
         </div>
         <nav id="navbar">
           <ul id="list">
-            <li><a href="./index.jsp">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="?#track_o">Track</a></li>
             <li>
@@ -32,24 +33,9 @@
             </li>
           </ul>
         </nav>
-      </header> --%>
-       
-       <div id="divzMenu" style="position: absolute; width: 100%; overflow-x: hidden;">
-
-        <jsp:include page="./kabootar_header.jsp" flush="true">
-        </jsp:include>
-      </div>
-      
-      <section class="hero" style="height: 585px">
-        <div style="display: hidden; height: 200px">
-          <table>
-            <tbody>
-              <tr>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      </header>
+       <!-- header end -->
+      <section class="hero">
 
         <div id="hero-text">
           <h4>
@@ -68,63 +54,44 @@
         </div>
       </section>
 
-      <section class="track_order" id="track_o" style="height: 585px">
-        <div style="display: hidden; height: 300px">
-          <table>
-            <tbody>
-              <tr>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="center">
-          <form>
-            <fieldset style="width: 400px">
-              <legend><b>Track Order</b></legend>
-              <div id="t_form">
-                <p>
-                  <font size="4px"><b>Track</b> your order through</font>
-                </p>
-                <table>
-                  <input
-                    type="radio"
-                    id="mob"
-                    name="fav_language"
-                    value="Mobile No."
-                  />
-                   
-                  <label for="mob">Mobile No. </label>
-                   
-                  <input
-                    type="radio"
-                    id="shipment"
-                    name="fav_language"
-                    value="Shipment No."
-                  />
-                   
-                  <label for="shipment">Shipment No. </label>
-                   
-                  <input
-                    type="radio"
-                    id="orderid"
-                    name="fav_language"
-                    value="Order Id"
-                  />
-                   
-                  <label for="orderId">Order Id</label
-                  ><br /><br />
-                  <input
-                    type="text"
-                    style="width: 90%"
-                    placeholder="Enter your #"
-                  /><br /><br />
-                  <input type="submit" value="Track Order" />
-                </table>
-              </div>
-            </fieldset>
-          </form>
-        </div>
+<!-- tracking section -->
+          <section id="track_o">
+          <div class="track-container">
+            <h2>TRACK ORDER</h2>
+            <form id="t_form">
+                <input
+                  type="radio"
+                  id="mob"
+                  value="Mobile No."
+                />
+                 
+                <label for="mob">Mobile No. </label>
+                 
+                <input
+                  type="radio"
+                  id="shipment"
+                  value="Shipment No."
+                />
+                 
+                <label for="shipment">Shipment No. </label>
+                 
+                <input
+                  type="radio"
+                  id="orderid"
+                  value="Order Id"
+                />
+                 
+                <label for="orderId">Order Id</label>
+                
+                <input
+                  type="text"
+                  style="width: 100%"
+                  placeholder="Enter your #"
+                /><br /><br />
+                <input type="submit" value="Track Order" id="track-btn"/>
+              
+            </form>
+          </div>
       </section>
     </div>
   </body>
