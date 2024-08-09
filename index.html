@@ -1,98 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KabootarX | Home</title>
+    <title>Kabootar | Home</title>
     <link rel="icon" type="image/x-icon" href="./assets/x-ico.ico" />
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- header start -->
-    <div class="container">
-      <header id="header">
-        <div class="brandLogo" style="margin-left: 15px">
-          <a href="./index.html">
-            <img
-              src="./assets/Logo.png"
-              alt="KabootarX"
-              height="40px"
-              width="auto"
-          /></a>
-        </div>
-        <nav id="navbar">
-          <ul id="list">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="?#track_o">Track</a></li>
-            <li>
-              <a href="#register"><button>Register</button></a>
-            </li>
-            <li>
-              <a href="./login.html"><button>Log In</button></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-       <!-- header end -->
-      <section class="hero">
+    <script src="./JS/loadHeader.js"></script>
+</head>
+<body>
+    <div id="headerContainer"></div>
 
-        <div id="hero-text">
-          <h4>
-            We are India's largest fully integrated<br /><br />
-            <span style="color: #964734">logistic service</span>
-            provider.
-          </h4>
-          <br /><br />
-          <ul class="hero-list">
-            <li>Express Parcel</li>
-            <li>PTC</li>
-            <li>FTC</li>
-            <li>Cross border</li>
-            <li>Supply Chain</li>
-          </ul>
-        </div>
-      </section>
-
-<!-- tracking section -->
-          <section id="track_o">
-          <div class="track-container">
-            <h2>TRACK ORDER</h2>
-            <form id="t_form">
-                <input
-                  type="radio"
-                  id="mob"
-                  value="Mobile No."
-                />
-                 
-                <label for="mob">Mobile No. </label>
-                 
-                <input
-                  type="radio"
-                  id="shipment"
-                  value="Shipment No."
-                />
-                 
-                <label for="shipment">Shipment No. </label>
-                 
-                <input
-                  type="radio"
-                  id="orderid"
-                  value="Order Id"
-                />
-                 
-                <label for="orderId">Order Id</label>
-                
-                <input
-                  type="text"
-                  style="width: 100%"
-                  placeholder="Enter your #"
-                /><br /><br />
-                <input type="submit" value="Track Order" id="track-btn"/>
-              
-            </form>
+    <div class="container" id="bottom_right">
+        <section class="hero">
+    
+          <div id="hero-text">
+            <h4>
+              We are India's largest fully integrated<br /><br />
+              <span style="color: #964734">logistic service</span>
+              provider.
+            </h4>
+            <br /><br />
+            <ul class="hero-list">
+              <li>Express Parcel</li>
+              <li>PTC</li>
+              <li>FTC</li>
+              <li>Cross border</li>
+              <li>Supply Chain</li>
+            </ul>
           </div>
-      </section>
-    </div>
-  </body>
+        </section>
+    
+    <!-- tracking section -->
+            <section id="track_o">
+            <div class="track-container">
+              <h2>TRACK ORDER</h2>
+              <form id="t_form">
+                  <input
+                    type="radio"
+                    id="mob"
+                    value="Mobile No."
+                  />
+                   
+                  <label for="mob">Mobile No. </label>
+                   
+                  <input
+                    type="radio"
+                    id="shipment"
+                    value="Shipment No."
+                  />
+                   
+                  <label for="shipment">Shipment No. </label>
+                   
+                  <input
+                    type="radio"
+                    id="orderid"
+                    value="Order Id"
+                  />
+                   
+                  <label for="orderId">Order Id</label>
+                  
+                  <input
+                    type="text"
+                    style="width: 100%"
+                    placeholder="Enter your #"
+                  /><br /><br />
+                  <input type="submit" value="Track Order" id="track-btn"/>
+                
+              </form>
+            </div>
+        </section>
+      </div>
+</body>
 </html>
+

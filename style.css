@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +9,17 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 a {
   text-decoration: none;
-  color: black;
-  font-weight: bold;
 }
+a:hover{
+  color: red;
+}
+
 button {
   background-color: #024950;
   color: white;
@@ -22,11 +28,18 @@ button {
   padding: 6px;
   border-radius: 5px;
 }
-header {
+
+#bottom_right{
   width: 100%;
-  height: 10%;
+  height: 100vh;
+  overflow: auto;
+}
+
+#header {
+  width: 100%;
+  height: 8%;
   padding: 2vw 0;
-  background-image: linear-gradient(rgb(255, 0, 0), rgb(0, 0, 0));
+  background-image: linear-gradient(#00a0af, rgb(45, 45, 45));
   color: white;
   display: flex;
   align-items: center;
@@ -34,24 +47,25 @@ header {
   position: fixed;
   top: 0px;
 }
-header nav#navbar ul {
+#header nav#navbar ul {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header nav#navbar ul li a {
+#header nav#navbar ul li a {
   margin: 1rem;
-  font-family: Popin, sans-serif;
-  font-size: 1rem;
+  /* font-family: Popin, sans-serif; */
+  font-family: var(--Singlet-font);
+  font-size: 0.9rem;
   color: white;
 }
 h4 {
   font-size: 45px;
   font-family: Popin, sans-serif;
   text-align: center;
-  z-index: 1000px;
+  z-index: 1px;
 }
 ul.hero-list {
   list-style: square;

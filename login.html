@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KabootarX | Login</title>
+    <link rel="icon" type="image/x-icon" href="./assets/x-ico.ico">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./JS/loadHeader.js"></script>
     <style>
       body {
         font-family: Arial, Helvetica, sans-serif;
@@ -51,68 +57,64 @@
         background-color: #c9302c;
       }
     </style>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KabootarX | Login</title>
-    <link rel="icon" type="image/x-icon" href="./assets/x-ico.ico" />
-    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body
-    style="
-      background-image: url(./assets/scene1.jpeg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    "
-  >
-    <header id="header">
-      <div class="brandLogo" style="margin-left: 15px">
-        <a href="./index.html">
-          <img
-            src="./assets/Logo.png"
-            alt="KabootarX"
-            height="40px"
-            width="auto"
-        /></a>
-      </div>
-      <nav id="navbar">
-        <ul id="list">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="./index.html?#track_o">Track</a></li>
-          <li>
-            <a href="#register"><button>Register</button></a>
-          </li>
-          <li>
-            <a href="./login.html"><button>Log In</button></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
-      <h2>ACCOUNT LOGIN</h2>
-      <form>
-        <label for="username">User name:</label>
-        <input
-          type="text"
-          id="username"
-          name="username"
-          placeholder="Enter username"
-        />
+  <body style="background-image: url(./assets/scene1.jpeg); background-repeat: no-repeat; background-size: cover; ">
 
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Enter password"
-        />
+  <div id="headerContainer"></div>
 
-        <button id="btn-login" type="submit">LOGIN</button>
+  <div class="container">
+    <h2>ACCOUNT LOGIN</h2>
+    <form id="login-form">
+      <label for="username">User name:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter username"
+      />
 
-        <a href="#" style="float: right">
-          <font size="1" color="#024950">Forgot Password?</font>
-        </a>
-      </form>
-    </div>
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter password"
+      />
+
+      <input id="btn-login" type="submit" value="LOGIN">
+
+      <a href="#" style="float: right">
+        <font size="1" color="#024950">Forgot Password?</font>
+      </a>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('login-form');
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const username = usernameInput.value.trim();
+      const password = passwordInput.value.trim();
+
+      if (username === '' || password === '') {
+        alert('Please fill in both username and password');
+        return;
+      }
+
+      // Add your validation logic here
+      // For example, you can check if the username and password match a specific pattern
+      // or if they match a stored value in a database
+      if (username === 'admin' && password === 'password') {
+        // If the validation is successful, redirect to the next page
+        window.location.href = './loginMainPage.html?username=admin';
+      } else {
+        alert('Invalid username or password');
+      }
+    });
+  </script>
   </body>
 </html>

@@ -1,21 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KabootarX</title>
-  </head>
-  <body>
-    <header>
-      <div class="brandLogo">BrnadLogo</div>
-      <nav id="navbar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#track">Track</a></li>
-          <li><a href="#logIn">Log In</a></li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: #f2f2f2;
+        }
+        .h{
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            text-align: center;
+            background-color: gray;
+            color: black;
+            float: left;
+        }
+        .b{
+            width: 30%;
+            height: 700px;
+            background-color: lightgray;
+            float: left;
+            border: 2px solid black;
+        }
+        .b a:link, a:active, a:visited{
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            background-color: #f5f5f5;
+            color: #ccc;
+            border: 2px solid red;
+            padding: 10px;
+
+        }
+        .c{
+            width: 70%;
+            height: 700px;
+            background: #ffff;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="h">
+        <h3>Welcome to my new Website</h3>
+    </div>
+    <div class="b">
+        <a href="index.html" target="F1">Home</a>
+        <a href="class.html" target="F1">About Us</a>
+        <a href="final-form.html" target="F1">Courses</a>
+        <a href="google.html" target="F1">Result</a>
+        <a href="youtubelogo.html" target="F1">Contact</a>
+    </div>
+    <div class="c">
+        <iframe src="1.jpeg" width="100%" height="700" name="F1" frameborder="0"></iframe>
+    </div>
+    
+</body>
 </html>
