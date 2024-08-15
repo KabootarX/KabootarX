@@ -1,0 +1,8 @@
+#track_orders{
+    display:block;
+}
+
+#track_list{
+    display: flex;
+    width: 100%;
+}
