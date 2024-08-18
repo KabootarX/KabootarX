@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 h1{
     margin-left: 10px;
 }
@@ -46,53 +45,4 @@ a {
    #logout{
     float: right;
     margin-right: 15px;
-=======
-h1{
-    margin-left: 10px;
-}
-
-
-#left_frame{
-    background-image: linear-gradient(90deg,#000000, rgb(255, 255, 255));
-    width: 15%;
-    height: 100vh;
-    float: left;
-}
-
-#table_left{
-    display: block;
-    height: 100vh;
-    margin-left: 15px;
-}
-#dashboard{
-    margin-top: 10%;
-    color: rgb(255, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
-}
-a {
-    text-decoration: none;
-    color: white;
-  }
-  
-#bookParcel{
-    
-    margin-top: 10px;
-}
-#right_frame{
-    float: right;
-    width: 85%;
-    height: 100vh;
-    background-image: linear-gradient(90deg,#000000, rgb(0, 0, 0));
-    color: white;
-   }
-
-   #right_f{
-    margin-top: 1%;
-    height: 100vh;
-   }
-
-   #logout{
-    float: right;
-    margin-right: 15px;
->>>>>>> c54ab3efe5e1d26318850103ad84689c9cc78e17
    }

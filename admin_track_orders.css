@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #track_orders{
     display:block;
 }
@@ -7,13 +6,4 @@
     display: flex;
     width: 100%;
     /* height: 100vh; */
-=======
-#track_orders{
-    display:block;
-}
-
-#track_list{
-    display: flex;
-    width: 100%;
->>>>>>> c54ab3efe5e1d26318850103ad84689c9cc78e17
 }
