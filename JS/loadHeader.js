@@ -1,5 +1,5 @@
 function loadHeader() {
-    fetch('https://github.com/KabootarX/KabootarX/blob/main/header.html')
+    fetch('https://kabootarx.github.io/KabootarX/header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('headerContainer').innerHTML = data;
