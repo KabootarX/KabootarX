@@ -56,6 +56,11 @@
       #btn-login:hover {
         background-color: #c9302c;
       }
+      .forgot-password {
+    font-size: 1em;
+    color: #024950;
+    text-decoration: none;
+  }
     </style>
   </head>
   <body style="background-image: url(./assets/scene1.jpeg); background-repeat: no-repeat; background-size: cover; ">
@@ -81,40 +86,31 @@
         placeholder="Enter password"
       />
 
-      <input id="btn-login" type="submit" value="LOGIN">
+      <input id="btn-login" type="submit" value="LOGIN" />
+      <a href="#" class="forgot-password" style="float: right">Forgot Password?</a>
+      </form>
+    </div>
+    
+    <script type="text/javascript">
+      const loginForm = document.getElementById('login-form');
+      loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
 
-      <a href="#" style="float: right">
-        <font size="1" color="#024950">Forgot Password?</font>
-      </a>
-    </form>
-  </div>
-
-  <script>
-    const form = document.getElementById('login-form');
-    const usernameInput = document.getElementById('username');
-    const passwordInput = document.getElementById('password');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const username = usernameInput.value.trim();
-      const password = passwordInput.value.trim();
-
-      if (username === '' || password === '') {
-        alert('Please fill in both username and password');
-        return;
-      }
-
-      // Add your validation logic here
-      // For example, you can check if the username and password match a specific pattern
-      // or if they match a stored value in a database
-      if (username === 'admin' && password === 'password') {
-        // If the validation is successful, redirect to the next page
-        window.location.href = './loginMainPage.html?username=admin';
-      } else {
-        alert('Invalid username or password');
-      }
-    });
-  </script>
+        if (!username || !password) {
+          alert('Please enter both username and password');
+          return;
+        }
+        else if(username == "Khubesh" && password == "Akmhiu@#1910" || username == "Admin" && password == "admin"){
+            window.location.href = 'loginMainPage.html?username=' + encodeURIComponent(username);
+            // Set the username in localStorage
+            localStorage.setItem('username', username); // Replace with the actual username
+        }
+        else {
+            alert('Invalid username or password');
+          }
+        });
+    </script>
   </body>
 </html>

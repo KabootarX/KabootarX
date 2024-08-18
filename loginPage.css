@@ -16,7 +16,7 @@ h1{
     margin-left: 15px;
 }
 #dashboard{
-    margin-top: 35%;
+    margin-top: 10%;
     color: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace;
 }
@@ -38,6 +38,11 @@ a {
    }
 
    #right_f{
-    margin-top: 4%;
-    height: 100%;
+    margin-top: 1%;
+    height: 100vh;
+   }
+
+   #logout{
+    float: right;
+    margin-right: 15px;
    }

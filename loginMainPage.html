@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Parcel</title>
+    <title>Admin</title>
     <link rel="icon" type="image/x-icon" href="./assets/x-ico.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./loginPage.css" />
     <script src="./JS/loadHeader.js"></script>
 </head>
 
 <body>
-    <div id="headerContainer"></div>
-    <div style="position: absolute;">
+    <!-- <div id="headerContainer"></div> -->
+    <!-- <div style="position: absolute;">
         <table>
         <tr></tr>
         <tr><td>&nbsp;</td></tr>
         <tr><td>&nbsp;</td></tr>
         <tr><td>&nbsp;</td></tr>
         </table>
-    </div>
+    </div> -->
 <section id="left_frame">
     <div id="dashboard">
         <table id="table_left">
-        <tr><h1>Dashboard</h1></tr>
-        <tr id="bookParcel"><td>Book Parcel</td></tr>
-        <tr><td><a href="index.html#trach_o" target="rightFrame">Track Orders</a></td></tr>
+        <h1><a href="./index.html">KabootarX</a></h1>
+        <tr><td><a><p id="dashboard-link" target="rightFrame"><font size="4rem" style="font-weight: bold;">Dashboard</font></p></a></td></tr>
+        <tr id="bookParcel"><td><a href="track-form.html" target="rightFrame">Book Parcel</a></td></tr>
+        <tr><td><a href="admin_track_orders.html" target="rightFrame">Track Orders</a></td></tr>
         <tr><td>View Parcels</td></tr>
 
     </table>
@@ -33,8 +35,45 @@
 </section>
 <section id="right_frame">
     <div id="right_f">
-        <iframe src="" name="rightFrame" style="height: 100%; width: 100%;"></iframe>
+        <div  id="logout">
+            <table>
+                <tr>
+                    <td id="usernameDisplay"> </td>
+                    <td> &nbsp;&nbsp;</td>
+                    <td> &nbsp;&nbsp;</td>
+                    <td onclick="javascript:printFrame();"><a href=""><span class="material-symbols-outlined">Print</span></a></td>
+                    <td> &nbsp;&nbsp;</td>
+                    <td> &nbsp;&nbsp;</td>
+                    <td><a href="./login.html"><span class="material-symbols-outlined">Logout</span></a></td>
+                    
+                </tr>
+            </table>
+        </div>
+        <iframe src="" name="rightFrame" style="height: 90vh; width: 100%;"></iframe>
     </div>
 </section>
+
+
+<script>
+    const dashboardLink = document.getElementById('dashboard-link');
+    dashboardLink.addEventListener('click', () => {
+        window.rightFrame.location.reload();
+    });
+
+    function printFrame(){
+        window.frames["rightFrame"].focus();
+        window.frames["rightFrame"].print();
+        window.frames["rightFrame"].focus();
+    }
+
+    // Get the username from localStorage
+const username = localStorage.getItem('username');
+
+// Display the username
+const usernameDisplay = document.getElementById('usernameDisplay');
+usernameDisplay.textContent = `Welcome, ${username}!`;
+    
+    </script>
+
 </body>
 </html>
