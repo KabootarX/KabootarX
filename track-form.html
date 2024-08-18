@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -106,3 +107,113 @@ h2 {
   </section>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="icon" type="image/x-icon" href="./assets/x-ico.ico" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <style>
+      .container {
+        margin-top: 2%;
+        left: 50%;
+        width: 450px;
+        background-color: #000000;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+        opacity: 0.8;
+      }
+      #track_o {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background: url(./amination.html);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#t_form {
+  display: BLOCK;
+  margin: 5vh;
+  margin-top: auto;
+}
+#track-btn {
+  background-color: brown;
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+h2, label, input[type="radio"] {
+  color: white; 
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#track-btn:hover {
+  background-color: #c9302c;
+}
+
+    </style>
+  </head>
+  <body>
+    <section id="track_o">
+      <div class="container">
+        <h2>TRACK ORDER</h2>
+        <form id="t_form">
+            <input
+              type="radio"
+              id="mob"
+              value="Mobile No."
+            />
+             
+            <label for="mob">Mobile No. </label>
+             
+            <input
+              type="radio"
+              id="shipment"
+              value="Shipment No."
+            />
+             
+            <label for="shipment">Shipment No. </label>
+             
+            <input
+              type="radio"
+              id="orderid"
+              value="Order Id"
+            />
+             
+            <label for="orderid">Order Id</label>
+            
+            <input
+              type="text"
+              style="width: 100%"
+              placeholder="Enter your #"
+            /><br /><br />
+            <input type="submit" value="Track Order" id="track-btn"/>
+        </form>
+      </div>
+  </section>
+  </body>
+</html>
+>>>>>>> c54ab3efe5e1d26318850103ad84689c9cc78e17

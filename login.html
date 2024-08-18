@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -113,4 +114,119 @@
         });
     </script>
   </body>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KabootarX | Login</title>
+    <link rel="icon" type="image/x-icon" href="./assets/x-ico.ico">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./JS/loadHeader.js"></script>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+      }
+
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        opacity: 0.8;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      #btn-login {
+        background-color: #024950;
+        color: white;
+        padding: 12px 20px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s;
+      }
+
+      #btn-login:hover {
+        background-color: #c9302c;
+      }
+      .forgot-password {
+    font-size: 1em;
+    color: #024950;
+    text-decoration: none;
+  }
+    </style>
+  </head>
+  <body style="background-image: url(./assets/scene1.jpeg); background-repeat: no-repeat; background-size: cover; ">
+
+  <div id="headerContainer"></div>
+
+  <div class="container">
+    <h2>ACCOUNT LOGIN</h2>
+    <form id="login-form">
+      <label for="username">User name:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter username"
+      />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter password"
+      />
+
+      <input id="btn-login" type="submit" value="LOGIN" />
+      <a href="#" class="forgot-password" style="float: right">Forgot Password?</a>
+      </form>
+    </div>
+    
+    <script type="text/javascript">
+      const loginForm = document.getElementById('login-form');
+      loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if (!username || !password) {
+          alert('Please enter both username and password');
+          return;
+        }
+        else if(username == "khubesh" && password == "Akmhiu@#1910"){
+            window.location.href = 'loginMainPage.html?username=' + encodeURIComponent(username);
+        }
+        else {
+            alert('Invalid username or password');
+          }
+        });
+    </script>
+  </body>
+>>>>>>> c54ab3efe5e1d26318850103ad84689c9cc78e17
 </html>

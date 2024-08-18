@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,4 +77,73 @@ usernameDisplay.textContent = `Welcome, ${username}!`;
     </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="icon" type="image/x-icon" href="./assets/x-ico.ico" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./loginPage.css" />
+    <script src="./JS/loadHeader.js"></script>
+</head>
+
+<body>
+    <!-- <div id="headerContainer"></div> -->
+    <!-- <div style="position: absolute;">
+        <table>
+        <tr></tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td></tr>
+        </table>
+    </div> -->
+<section id="left_frame">
+    <div id="dashboard">
+        <table id="table_left">
+        <h1><a href="./index.html">KabootarX</a></h1>
+        <tr><td><a><p id="dashboard-link" target="rightFrame"><font size="4rem" style="font-weight: bold;">Dashboard</font></p></a></td></tr>
+        <tr id="bookParcel"><td><a href="track-form.html" target="rightFrame">Book Parcel</a></td></tr>
+        <tr><td><a href="admin_track_orders.html" target="rightFrame">Track Orders</a></td></tr>
+        <tr><td>View Parcels</td></tr>
+
+    </table>
+    </div>
+</section>
+<section id="right_frame">
+    <div id="right_f">
+        <div  id="logout">
+            <table>
+                <tr>
+                    <td onclick="javascript:printFrame();"><a href="">Print Page</a></td>
+                    <td> &nbsp;&nbsp;</td>
+                    <td id="usernameDisplay"> </td>
+                    <td id="logout-button"><a href="./login.html">Logout</a></td>
+                    
+                </tr>
+            </table>
+        </div>
+        <iframe src="" name="rightFrame" style="height: 100%; width: 100%;"></iframe>
+    </div>
+</section>
+
+
+<script>
+    const dashboardLink = document.getElementById('dashboard-link');
+    dashboardLink.addEventListener('click', () => {
+        window.rightFrame.location.reload();
+    });
+
+    function printFrame(){
+        window.frames["rightFrame"].focus();
+        window.frames["rightFrame"].print();
+        window.frames["rightFrame"].focus();
+    }
+    
+    </script>
+
+</body>
+>>>>>>> c54ab3efe5e1d26318850103ad84689c9cc78e17
 </html>
